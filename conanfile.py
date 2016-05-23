@@ -6,7 +6,8 @@ import os
 class GumboConan(ConanFile):
     name = "Gumbo"
     version = "0.10.1"
-    url = "https://github.com/google/gumbo-parser.git"
+    #original project url = "https://github.com/google/gumbo-parser.git"
+    url = "https://github.com/ruipires/conan-gumbo.git" # repo of this wrapper
     license = "Apache License, Version 2.0"
     settings = "os", "compiler", "build_type", "arch"
     exports = "CMakeLists.txt"
