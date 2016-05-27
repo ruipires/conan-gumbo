@@ -1,6 +1,0 @@
-[requires]
-Gumbo/0.10.1@demo/testing
-#Gumbo/0.10.1@rui/stable
-
-[generators]
-cmake
