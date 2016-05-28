@@ -13,6 +13,7 @@ class GumboConan(ConanFile):
     exports = "CMakeLists.txt"
     options = {"shared": [True, False]}
     default_options = "shared=False"
+    generators = "cmake"
 
     build_dir = "build"
     source_dir = "gumbo-parser-%s" % version
