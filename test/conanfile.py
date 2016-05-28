@@ -16,6 +16,7 @@ class DefaultNameConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     requires = "Gumbo/0.10.1@%s/%s" % (username, channel)
     generators = "cmake"
+    default_options = "Gumbo:shared=True"
 
     def build(self):
         cmake = CMake(self.settings)
